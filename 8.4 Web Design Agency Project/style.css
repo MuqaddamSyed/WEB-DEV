@@ -11,7 +11,6 @@ body {
 }
 
 h1 {
-  display: block;
   font-size: 5rem;
 }
 
@@ -19,19 +18,43 @@ footer {
   text-align: right;
   color: midnightblue;
 }
+
 .tile-image{
+  height: 200px;
   float: left;
+  margin-right: 30px;
 }
-.left-card{
-  float: left;
+.card{
+  width: 45%;
 }
-.right-card{
+.right{
   float: right;
 }
-.main{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 100px 200px  200px ;
-  gap: 30px;
+.left {
+  float: left;
 }
 
+.creative{
+  color: midnightblue;
+}
+
+@media (max-width: 650px){
+  .logo{
+    width: 100px;
+  }
+  h1{
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .card{
+    display: block;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  .card img{
+    display: inline;
+    width: 100%;
+    object-fit: cover;
+  }
+}
